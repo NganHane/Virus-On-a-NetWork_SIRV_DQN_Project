@@ -140,10 +140,6 @@ The evaluation focuses on:
 - Vaccination and protection dynamics.
 - The trade-off between epidemic control and intervention costs.
 
-## Report
-
-The project report is available in [`LeNganHa_Virus On a NetWork_SIRV_DQN_Project`](LeNganHa_Virus On a NetWork_SIRV_DQN_Project.pdf).
-
 ## Author
 
 **Lê Ngân Hà**
