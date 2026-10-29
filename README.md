@@ -50,17 +50,44 @@ The learning process considers the trade-off between reducing infections and min
 
 ```text
 Virus_On_a_Network_SIRV_DQN_Project/
-├── [source code files]
-├── [model and environment files]
-├── [training and evaluation scripts]
-├── [visualization files]
+Virus_On_a_Network_SIRV_DQN_Project/
+├── agent.py
+├── env.py
+├── model.py
+├── train_dqn.py
+├── evaluate_and_plot.py
+├── evaluate_baseline.py
+├── saved_dqn/
+│   └── DQN_1/
+│       ├── dqn_sirv_model.zip
+│       └── events.out.tfevents...
 ├── README.md
 └── report.pdf
-```
 
 ## Installation
 
-Install the required dependencies:
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/Virus_On_a_Network_SIRV_DQN_Project.git
+cd Virus_On_a_Network_SIRV_DQN_Project
+```
+
+### 2. Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+Activate the environment:
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install dependencies
 
 ```bash
 pip install mesa networkx stable-baselines3 gymnasium matplotlib numpy
@@ -68,19 +95,39 @@ pip install mesa networkx stable-baselines3 gymnasium matplotlib numpy
 
 ## Usage
 
-### Train the DQN Agent
+### 1. Train the DQN Agent
+
+Run the training script:
 
 ```bash
 python train_dqn.py
 ```
 
-### Evaluate the Trained Agent
+The trained model is saved for subsequent evaluation.
+
+### 2. Evaluate the DQN Agent
+
+After training, run:
 
 ```bash
 python evaluate_and_plot.py
 ```
 
-*Note: Update the commands according to the actual filenames and configuration in the project.*
+This script evaluates the trained policy and generates simulation results and visualizations.
+
+### 3. Run the Baseline Simulation
+
+To evaluate the epidemic model without intervention, run:
+
+```bash
+python evaluate_baseline.py
+```
+
+### Notes
+
+- Run the training script before evaluating the DQN agent if a trained model is not available.
+- Ensure that the required dependencies are installed.
+- Check the configuration and output paths in the scripts before running.
 
 ## Results
 
@@ -95,9 +142,11 @@ The evaluation focuses on:
 
 ## Report
 
-The project report is available in [`report.pdf`](report.pdf).
+The project report is available in [`LeNganHa_Virus On a NetWork_SIRV_DQN_Project`](LeNganHa_Virus On a NetWork_SIRV_DQN_Project.pdf).
 
 ## Author
 
+**Lê Ngân Hà**
 Software Engineering Graduate  
-Interested in Artificial Intelligence, Machine Learning, and Reinforcement Learning.
+Interested in Artificial Intelligence, Machine Learning and Reinforcement Learning.
+Github: [https://github.com/NganHane]
