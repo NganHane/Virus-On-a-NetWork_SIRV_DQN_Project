@@ -50,7 +50,6 @@ The learning process considers the trade-off between reducing infections and min
 
 ```text
 Virus_On_a_Network_SIRV_DQN_Project/
-Virus_On_a_Network_SIRV_DQN_Project/
 ├── agent.py
 ├── env.py
 ├── model.py
